@@ -65,7 +65,7 @@ var UserMenu = Widget.extend({
                     })
                     .fail(function (result, ev){
                         ev.preventDefault();
-                        framework.redirect('https://accounts.odoo.com/account');
+                        framework.redirect('www.eagle-it-services.com');
                     });
             },
         });
@@ -74,7 +74,7 @@ var UserMenu = Widget.extend({
      * @private
      */
     _onMenuDocumentation: function () {
-        window.open('https://www.odoo.com/documentation/user', '_blank');
+        window.open('www.eagle-it-services.com', '_blank');
     },
     /**
      * @private
@@ -109,7 +109,7 @@ var UserMenu = Widget.extend({
      * @private
      */
     _onMenuSupport: function () {
-        window.open('https://www.odoo.com/buy', '_blank');
+        window.open('www.eagle-it-services.com', '_blank');
     },
 });
 
