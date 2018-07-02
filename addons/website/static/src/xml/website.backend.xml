@@ -99,7 +99,7 @@
         </a>
         <br/><br/>
         Your Client ID: <input type="text" name="ga_client_id" t-att-value="ga_key" style="width: 100%"></input>
-        <a href="https://www.eagle-it-services.com" class="oe_link fa fa-arrow-right" target="_blank">
+        <a href="http://www.eagle-it-services.com" class="oe_link fa fa-arrow-right" target="_blank">
             How to get my Client ID
         </a>
     </div>
