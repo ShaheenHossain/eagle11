@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #----------------------------------------------------------
-# OpenERP HTTP layer
+
 #----------------------------------------------------------
 import ast
 import collections
@@ -654,7 +654,7 @@ class JsonRequest(WebRequest):
                 _logger.exception("Exception during JSON request handling.")
             error = {
                     'code': 200,
-                    'message': "Odoo Server Error",
+                    'message': "Eagle ERP Server Error",
                     'data': serialize_exception(exception)
             }
             if isinstance(exception, werkzeug.exceptions.NotFound):
@@ -663,10 +663,10 @@ class JsonRequest(WebRequest):
                 error['message'] = "404: Not Found"
             if isinstance(exception, AuthenticationError):
                 error['code'] = 100
-                error['message'] = "Odoo Session Invalid"
+                error['message'] = "Eagle ERP Session Invalid"
             if isinstance(exception, SessionExpiredException):
                 error['code'] = 100
-                error['message'] = "Odoo Session Expired"
+                error['message'] = "Eagle ERP Session Expired"
             return self._json_response(error=error)
 
     def dispatch(self):
@@ -802,12 +802,12 @@ class HttpRequest(WebRequest):
                 else:
                     _logger.warn("""No CSRF validation token provided for path '%s'
 
-Odoo URLs are CSRF-protected by default (when accessed with unsafe
+Eagle ERP URLs are CSRF-protected by default (when accessed with unsafe
 HTTP methods). See
-https://www.odoo.com/documentation/11.0/reference/http.html#csrf for
+https://www.eagle-it-services.com#csrf for
 more details.
 
-* if this endpoint is accessed through Odoo via py-QWeb form, embed a CSRF
+* if this endpoint is accessed through Eagle ERP via py-QWeb form, embed a CSRF
   token in the form, Tokens are available via `request.csrf_token()`
   can be provided through a hidden input and must be POST-ed named
   `csrf_token` e.g. in your form add:
