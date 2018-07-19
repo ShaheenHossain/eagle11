@@ -116,7 +116,7 @@
     </xpath>
     <xpath expr="//t[@t-set='head_website']" position="replace">
         <t t-set="head_website">
-            <meta name="generator" content="Odoo"/>
+            <meta name="generator" content="Eagle ERP"/>
 
             <meta t-if="main_object and 'website_indexed' in main_object
                 and not main_object.website_indexed" name="robots" content="noindex"/>
