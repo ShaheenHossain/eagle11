@@ -105,7 +105,7 @@
             <t t-set="planners" t-value="widget.planners"/>
             <t t-call="DashboardPlanner.PlannersList"/>
             <hr/>
-            Need more help? <a target="_blank" href="https://www.eagle-it-services.com">Browse the documentation.</a>
+            Need more help? <a target="_blank" href="http://www.eagle-it-services.com">Browse the documentation.</a>
         </div>
     </t>
 
