@@ -804,7 +804,7 @@ class HttpRequest(WebRequest):
 
 Eagle ERP URLs are CSRF-protected by default (when accessed with unsafe
 HTTP methods). See
-https://www.eagle-it-services.com#csrf for
+http://www.eagle-it-services.com#csrf for
 more details.
 
 * if this endpoint is accessed through Eagle ERP via py-QWeb form, embed a CSRF
