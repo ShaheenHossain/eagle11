@@ -291,7 +291,7 @@
                         <t t-if="not disable_database_manager">
                             <a class="" href="/web/database/manager">Manage Databases</a> |
                         </t>
-                        <a href="https://www.eagle-it-services.com" target="_blank">Powered by <span>Eagle ERP</span></a>
+                        <a href="http://www.eagle-it-services.com" target="_blank">Powered by <span>Eagle ERP</span></a>
                     </div>
                 </div>
             </div>
